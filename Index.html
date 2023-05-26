@@ -8,20 +8,21 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="mx-20 font-san">
+<body class="mx-20 font-san ">
 
-    <nav class=" py-4  flex items-baseline justify-between">
+    <nav class=" h-20   flex items-center justify-between">
         <img src="logo.png" class="h-9">
-
-        <div class="px-20 text-sm">
-            <a href="#" class="px-5"><b>Components</b></a>
-            <a href="#" class="px-5 mr-0 pr-0"><b>Templates</b></a>
-            <a class="bg-blue-500 text-white rounded-xl ml-0 px-2 py-1">New</a>
+        <img src="3.jpg" class="h-7 w-10 flex md:hidden">
+        <div class="pl-20 text-sm justify-end hidden md:flex ">
+            <a href="#" class="px-5 "><b>Components</b></a>
+            <a href="#" class="px-5 mr-0 pr-1"><b>Templates</b></a>
+            <a class="bg-blue-500 text-white rounded-xl ml-0 px-2 py-1 h-7">New</a>
             <a href="#" class="px-5"><b>Documentation</b></a>
             <button class="m-0 p-0"><img src="s.png" class="h-6"></button>
             <button class="mx-5 border-l-2 pl-3   ">Sign in</button>
             <button class="bg-black text-white rounded-md py-2  font-bold px-4">Get all-access </button>
         </div>
+        
     </nav>
 
     <hr color="#d6d6d6" size="1mm">
@@ -34,40 +35,42 @@
     </div>
 
 
-    <div class="  border-2   rounded-lg px-6">
-        <div class=" flex flex-row justify-between items-center h-16">
+    <div class="  border-2   rounded-lg px-6 ">
+        
+        <div class=" flex flex-row justify-between items-center h-16   ">
+            <img src="3.jpg" class="h-7 w-10 flex md:hidden">
             <div class=" ">
-                <ul class="flex justify-start mx-3">
-                    <li class="mx-5">Women</li>
-                    <li class="mx-5">Men</li>
-                    <li class="mx-5">Company</li>
-                    <li class="mx-5">Store</li>
+                <ul class="hidden md:flex justify-start mx-3 ">
+                    <li class="mx-3">Women</li>
+                    <li class="mx-3">Men</li>
+                    <li class="mx-3">Company</li>
+                    <li class="mx-3">Store</li>
                 </ul>
             </div>
             
             <img src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" class="h-8 ">
             
             <div class="h3 ">
-                <ul class="flex flex-row justify-end mx-2">
-                    <li class="mx-2 flex" ><img src="f.png" class="h-5 flex px-1 rounded-md">CAD</li>
-                    <li class="mx-1"><img src="s.png" class="h-5"></li>
-                    <li class="mx-1">#</li>
-                    <li class="mx-1">#</li>
+                <ul class="flex flex-row justify-end mx-3 items-center ">
+                    <li class="mx-2 flex " ><img src="f.png" class="h-5 flex px-1 rounded-md ">CAD</li>
+                    <li class="hidden md:flex mx-1"><img src="s.png" class="h-6"></li>
+                    <li class="hidden md:flex mx-1 "><img src="c.jpg" class="h-10 "></li>
+                    <li class="hidden md:flex mx-1 items-center"><img src="b.jpg" class="h-10 bg-transparent">0</li>
                 </ul>
             </div>
         </div>
 
         <hr color="#d6d6d6" size="1mm">
 
-        <div class="w-full flex ">
+        <div class="w-full flex flex-col md:flex-row">
 
             <div class="w-full mr-5">
-                <img src="https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg" class="w-full ">
-                <ul class="flex flex-row justify-between">
-                    <li><img src="https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg" class="h-36 hover:ring-4"></li>
-                    <li><img src="https://tailwindui.com/img/ecommerce-images/product-page-03-product-02.jpg" class="h-36 hover:ring-4"></li>
-                    <li><img src="https://tailwindui.com/img/ecommerce-images/product-page-03-product-03.jpg" class="h-36 hover:ring-4"></li>
-                    <li><img src="https://tailwindui.com/img/ecommerce-images/product-page-03-product-04.jpg" class="h-36 hover:ring-4"></li>
+                <img src="https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg" class="w-full min-h-fit ">
+                <ul class="hidden md:flex flex-row justify-between">
+                    <li><img src="https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg" class="h-36 hover:ring-4 rounded-lg"></li>
+                    <li><img src="https://tailwindui.com/img/ecommerce-images/product-page-03-product-02.jpg" class="h-36 hover:ring-4 rounded-lg"></li>
+                    <li><img src="https://tailwindui.com/img/ecommerce-images/product-page-03-product-03.jpg" class="h-36 hover:ring-4 rounded-lg"></li>
+                    <li><img src="https://tailwindui.com/img/ecommerce-images/product-page-03-product-04.jpg" class="h-36 hover:ring-4 rounded-lg"></li>
                 </ul>    
             </div>
 
@@ -87,18 +90,30 @@
                     <button class="h-8 w-8 bg-gray-400 rounded-2xl mx-3 hover:bg-gray-300 active:bg-slate-300 focus-within:ring-2 focus:ring-black " ></button>
                 </div>
                 <div class="flex items-center ">
-                    <button class="bg-blue-500 text-white p-3 px-32 rounded-md hover:bg-blue-400 my-5"><b>Add to bag</b></button>
+                    <button class="bg-blue-500 text-white p-3 px-32 rounded-md hover:bg-blue-400 my-5 "><b>Add to bag</b></button>
                     <button><img src="h.png" class="h-8 px-3"></button>
                 </div>
                 <div class="hi">
                     <hr color="#d6d6d6" size="1mm" class="my-10">
-                    <a href="#">Features</a>
+                    <div class="flex flex-row justify-between items-center">
+                    <a href="#" class="flex-start">Features</a>
+                    <a class="hover:font-bold text-4xl ">+</a></div>
+
                     <hr color="#d6d6d6" size="1mm"class="my-10">
-                    <a href="#" class="b.2">Care</a>
+                    <div class="flex flex-row justify-between items-center">
+                        <a href="#" class="flex-start">Care</a>
+                        <a class="hover:font-bold text-4xl ">+</a></div>
+                    
                     <hr color="#d6d6d6" size="1mm" class="my-10">
-                    <a href="#" class="c">Shipping</a>
+                    <div class="flex flex-row justify-between items-center">
+                        <a href="#" class="flex-start">Shipping</a>
+                        <a class="hover:font-bold text-4xl ">+</a></div>
+                    
                     <hr color="#d6d6d6" size="1mm" class="my-10">
-                    <a href="#" class="d">Returns</a>
+                    <div class="flex flex-row justify-between items-center">
+                        <a href="#" class="flex-start">Returns</a>
+                        <a class="hover:font-bold text-4xl ">+</a></div>
+                    
                 </div>
             </div>
         </div>
@@ -109,35 +124,35 @@
         <div class="flex flex-row justify-start items-baseline list-none   ">
             
             <div class="px-5">
-                <li><img src="b1.png" class="rounded-lg" ></li>
+                <li><img src="b1.png" class="rounded-lg cursor-pointer" ></li>
                 <li><b>Zip Tote basket</b></li>
                 <li>White and black</li>
-                <button class="bg-gray-100 py-2 text-sm w-full rounded-md">Add to bag</button>
+                <button class="bg-gray-100 py-2 text-sm w-full rounded-md hover:bg-gray-400">Add to bag</button>
             </div>
             <di class="px-5">
-                <li><img src="b2.png" class="rounded-lg" ></li>
+                <li><img src="b2.png" class="rounded-lg cursor-pointer" ></li>
                 <li><b>Zip High Wall Tote</b></li>
                 <li>White and black</li>
-                <button class="bg-gray-100 py-2 text-sm w-full rounded-md">Add to bag</button>
+                <button class="bg-gray-100 py-2 text-sm w-full rounded-md hover:bg-gray-400"">Add to bag</button>
             </di>
             <div class="px-5">
-                <li><img src="b3.png" class="rounded-lg" ></li>
+                <li><img src="b3.png" class="rounded-lg cursor-pointer" ></li>
                 <li><b>Halfsize Tote </b></li>
                 <li>White and black</li>
-                <button class="bg-gray-100 py-2 text-sm w-full rounded-md">Add to bag</button>
+                <button class="bg-gray-100 py-2 text-sm w-full rounded-md hover:bg-gray-400"">Add to bag</button>
             </div>
             <div class="px-5">
-                <li><img src="b4.png"class="rounded-lg"  ></li>
+                <li><img src="b4.png"class="rounded-lg cursor-pointer"  ></li>
                 <li><b>High Wall Tote</b></li>
                 <li>White and black</li>
-                <button class="bg-gray-100 py-2 text-sm w-full rounded-md">Add to bag</button>
+                <button class="bg-gray-100 py-2 text-sm w-full rounded-md hover:bg-gray-400"">Add to bag</button>
             </div>
         </div>
 
         <hr color="#d6d6d6" size="1mm" class="m-10">
         
-         <div class="flex justify-between ">
-            <ul><img src="l.png" class="h-10 "></ul>
+         <div class="flex justify-between flex-col md:flex-row cursor-pointer">
+            <ul><img src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" class="h-10 "></ul>
             <ul >
                 <li class="m-2"><b>Product</b></li>
                 <li class="m-2">Bags</li>
